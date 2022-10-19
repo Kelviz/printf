@@ -3,17 +3,16 @@
 void print_buffer(char buffer[], int *buff_ind);
 
 /**
-<<<<<<< HEAD
+
  * _printf - formatted output conversion and print data.
  *
  * @format: input string.
  *
  * Return: number of chars printer
-=======
+
  * _printf - Printf function
  * @format: format.
  * Return: Printed chars.
->>>>>>> 9f4f934f481d0d1b1a5c964c20790d93552c3930
  */
 void print_buffer(char buffer[], int *buff_ind);
 int _printf(const char *format, ...)
@@ -45,24 +44,23 @@ int _printf(const char *format, ...)
 			width = get_width(format, &i, list);
 			precision = get_precision(format, &i, list);
 			size = get_size(format, &i);
-<<<<<<< HEAD
+<
 			++;
 			printed = handle_print(format, &i, list, buffer,
 					flags, width, precision, size);
-=======
+==
 			++i;
 			printed = handle_print(format, &i, list, buffer,
 				flags, width, precision, size);
->>>>>>> 9f4f934f481d0d1b1a5c964c20790d93552c3930
+>>
 			if (printed == -1)
 				return (-1);
 			printed_chars += printed;
 		}
 	}
-<<<<<<< HEAD
-=======
+<<
 
->>>>>>> 9f4f934f481d0d1b1a5c964c20790d93552c3930
+
 	print_buffer(buffer, &buff_ind);
 
 	va_end(list);
@@ -72,13 +70,12 @@ int _printf(const char *format, ...)
 
 /**
  * print_buffer - Prints the contents of the buffer if it exist
-<<<<<<< HEAD
+<
  *
  * @buffer: Array of chars
  *
-=======
  * @buffer: Array of chars
->>>>>>> 9f4f934f481d0d1b1a5c964c20790d93552c3930
+>>
  * @buff_ind: Index at which to add next char, represents the length.
  */
 void print_buffer(char buffer[], int *buff_ind)
